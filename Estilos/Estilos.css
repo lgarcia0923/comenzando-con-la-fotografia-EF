@@ -1,15 +1,17 @@
+@import url('https://fonts.google…com/css?family=Dancing+Script');
+
 header{
   background-color:#5b7989;
   width:100%;
-  height:100px;
-  -moz-border-radius:10px;
-  -webkit-border-radius: 10px;
+  height:15%;
+  -moz-border-radius:10px 10px 5px 5px;
+  -webkit-border-radius: 10px 10px 5px 5px;
 }
 #cabecera{
   text-align:left;
   font-size:2.8em;
   color:white;
-  text-shadow: 2px #02010a;
+  text-shadow: 2px 2px 2px #02010a;
   margin-top:1px;
 }
 nav{
@@ -46,7 +48,7 @@ nav{
 }
 body{
   background:#02010a;
-  font-family:fantasy;
+  font-family: 'Dancing Script';
   font-style:italic;
   color:#000f2c;
 }
@@ -54,20 +56,6 @@ body{
   flex-flow: left inline;
   width:100%;
   height: 420px;
-}
-.contenedor1{
-  width:100%;
-  height:50%;
-  background-color: #82c3a6;
-  margin:2px;
-  -moz-border-radius:8px;
-  -webkit-border-radius: 8px;
-  text-align:center;
-}
-.imagen1 img{
-    margin-top: 1%;
-    padding:1%;
-    width:98%;
 }
 
 div img{
@@ -88,37 +76,91 @@ div [class*="bloque"]{
   max-height:550px;
   flex: 1 2 30%;
 }
+
+.contenedor1{
+  width:98%;
+  height:50%;
+  background-color: #82c3a6;
+  margin:0.5%;
+  padding:0.5%;
+  -moz-border-radius:8px;
+  -webkit-border-radius: 8px;
+  text-align:center;
+}
+.contenedor1 img{
+  width:98%;
+  height:98%;
+  margin:0.5%;
+  padding:0.5%;
+}
+
 .contenedor2 {
   display: flex;
   flex-flow: row;
   text-align:center;
+  height:30%;
+  margin:1px;
 }
 .bloque1{
   background-color:#d5c75f;
   order:2;
-  border:1px;
+  margin:1px;
   padding:10px;
   -moz-border-radius:8px;
   -webkit-border-radius: 8px;
 }
 .bloque1 img{
   width:100%;
+  border:solid 2px;
+  -webkit-box-shadow: 2px 2px 2px #82c3a6;
+  -moz-box-shadow: 2px 2px 2px #82c3a6;
 }
-
+.bloque1 img:hover{
+  transform: translatex(20px)
+            translatey(-5px);
+}
 .bloque2{
   background-color: #d5c75f;
   order:1;
-  border:1px;
+  margin:1px;
   padding:10px;
   -moz-border-radius:8px;
   -webkit-border-radius: 8px;
 }
 .bloque2 img{
   width:100%;
+  border:solid 2px;
+  -webkit-box-shadow: 2px 2px 2px #82c3a6;
+  -moz-box-shadow: 2px 2px 2px #82c3a6;
 }
+.bloque2 img:hover{
+  transform: rotate(10deg);
+}
+
 
 footer{
   width:100%;
-  position: static;
-
+  background-color:#C6d5c5;
+  -moz-border-radius:10px 10px 5px 5px;
+  -webkit-border-radius: 5px 5px 10px 10px;
+  display: flex;
+  flex-flow: row;
+  flex-basis:25%;
+  text-align:justify;
+}
+.columna1{
+  order:1;
+}
+.columna2{
+  order:2;
+  border-left:solid 1px #02010a;
+  text-align:center;
+}
+.columna3{
+  order:3;
+  border-left:solid 1px #02010a;
+}
+.columna4{
+  order:4;
+  border-left:solid 1px #02010a;
 }
